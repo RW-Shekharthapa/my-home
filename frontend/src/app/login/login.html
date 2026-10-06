@@ -1,0 +1,18 @@
+<main class="login-main">
+  <form class="login-card" (ngSubmit)="onSubmit()">
+    <h1>Home Management</h1>
+    <p>Sign in to continue</p>
+
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text" [(ngModel)]="username" autocomplete="username" required />
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" [(ngModel)]="password" autocomplete="current-password" required />
+
+    @if (error) {
+      <p class="error">{{ error }}</p>
+    }
+
+    <button type="submit">Log in</button>
+  </form>
+</main>

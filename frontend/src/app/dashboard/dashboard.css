@@ -1,0 +1,10 @@
+.dashboard-main {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f4f5f7;
+  text-align: center;
+}
